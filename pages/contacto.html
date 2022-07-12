@@ -65,37 +65,47 @@
         </nav>
       </header>
       <!--Fin header-->
-    <!--Formulario de contacto-->
-    <section class="contenedorformulario"></section>
-    <title class="tituloformulario">¡Escribinos! <br><br>
-         Para presupuestar tu evento, sugerencias o compartir tu experiencia </title>
-    <section class="container-fluid bg-secondary d-flex justify-content-center">
-		<article class="text light mb-0 p-2 fs-6">
 
-			<form action="#">
-                <label for="fname">Nombre:</label>
-				<input id="fname" type="text" placeholder="Nombre"><br>
+      <!--Formulario de contacto-->
+      
+      <section class="contenedorformulario">
+        <h1 class="p-2 mx-2">Escribinos!</h1>
+        <p class="p-2 mx-5"> Para presupuestar tu evento, sugerencia o compartir tu experiencia</p> 
+      <section class="container-fluid bg-secondary d-flex justify-content-center">
+      <article class="text-light mb-0 p-2 fs-6">
+      <div class="mb-3">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" 
+        placeholder="Nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="name">Telefono:</label>
+        <input type="tel" class="form-control" id="tel" 
+        placeholder="00-0000-0000" required>
+      </div>
+      <div class="mb-3">
+        <label for="name">Email:</label>
+        <input type="email" class="form-control" id="email" 
+        placeholder="nombre@ejemplo.com" required>
+      </div>
+      
+      <div class="mb-3">
+        <textarea class="form-control"
+         id="exampleFormControlTextarea1"
+        rows="3">Escribe tu mensaje</textarea>
+      </div>
+      <div class="mb-3">
+        <button type="button" class="btn
+         btn-dark btn-secondary w-100 fs-5">Enviar
+          Mensaje</button>
+      </div>
+    </article>
+    </section>
+  </section>
 
-				<label for="email">Correo electrónico
-					<input id="email" type="email" placeholder="lopibakery@hotmail.com" name="email"><br>
-				</label>
-
-				<label for="observaciones"> Comentarios:<br>
-					<textarea id="observaciones" placeholder="Detalles"></textarea>
-				</label><br>
-
-				<p>Consultas o Catering</p>
-				<select name="letra" id="letra"> 
-					<option value="x">Consultas</option>
-					<option value="y">Catering</option>
-					
-				</select>
-                    <form class="d-flex">
-                        <button class="btn btn-dark btn-secondary-outline-success" type="submit">Enviar</button>
-                      </form>
-		</article>
-	</section>
  <!--Fin de Formulario de contacto-->
+
+
         <!--Footer-->
         <footer class="">
             <h2 class="d-flex justify-content-start p-2 fs-4">Seguinos en nuestras redes</h2>

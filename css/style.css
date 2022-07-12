@@ -48,6 +48,13 @@ footer p, h2{
 
 
 /*Media queries pantalla grande*/
+@media (max-width: 1200px) {
+    #local{
+    flex-wrap:wrap;
+    padding-top: 30px;
+}
+
+}
 
 
 /*Media queries pantalla mediana*/
@@ -59,19 +66,21 @@ footer p, h2{
 }
 
 /*Media queries pantalla chica*/
+@media (max-width: 576px) {
+    .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    }
+}
 
 /*Formulario de contacto*/
 
 .contenedorformulario{
-    position:absolute;
-    top:30%;
-    transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 5px;
-    max-width: 500px;
 }
 
 #tituloformulario{
-    color:#3f3f3f;
+    color: white;
 }
 
