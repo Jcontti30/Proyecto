@@ -1,0 +1,27 @@
+.li{
+    display: flex;
+    margin-top: auto;
+    padding: 30px ;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.list{
+@extend .li;
+list-style-type: none;
+text-decoration: none;
+font-size: 18px;
+}
+
+
+%botones {
+    border: 1 px solid;
+    border-radius: 6px;
+    padding: 10px;
+   $colores:black;  
+}
+
+%menu button {
+    font-size: 18px;
+    font-weight: bold;
+}

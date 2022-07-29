@@ -1,0 +1,13 @@
+$partes:(
+    header: black,
+    main: white,
+    footer: black,
+    
+);
+
+@each $fondo_colores, $color in $partes {
+    .colores#{$fondo_colores} {
+        background-color: $color;
+    }
+    
+}

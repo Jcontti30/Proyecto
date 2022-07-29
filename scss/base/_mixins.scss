@@ -1,0 +1,25 @@
+
+@mixin primary ($color, $background-color, $font-size) {
+    width: 10px;
+    height: 20px;
+    
+}
+.primary-btn{
+@include primary(white, black, 60px)
+}
+
+
+
+@mixin footer {
+    background-color: white;
+    min-height: 100px;
+    color: black;
+     text-align: center;
+}
+/*Formulario de contacto*/
+
+@mixin contenedorformulario {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}

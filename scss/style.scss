@@ -1,8 +1,36 @@
 @import url(https://fonts.googleapis.com/css2?family=montserrat&display=swap);
 
-@import "component/header";
+@import "./componet/header";
+@import  "./componet/fonts";
+@import "./base/colores";
+@import "./base/extends";
+@import"./base/mixins";
+@import"./base/variables";
+
+
 
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
+
+/*Media queries pantalla grande*/
+@media (max-width: 1200px) {
+    #local {
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
+  }
+  /*Media queries pantalla mediana*/
+  @media (max-width: 768px) {
+    #intro {
+      width: 90% !important;
+    }
+  }
+  /*Media queries pantalla chica*/
+  @media (max-width: 576px){
+    .icono-wrap {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+    }
